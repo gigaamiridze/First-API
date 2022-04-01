@@ -4,7 +4,7 @@ from app import db, UserModel, VaccinationModel
 db.create_all()
 
 user_data = [
-    {'id': 1, 'email': 'flameflowoff@gmail.com', 'password': 'showtime'},
+    {'id': 1, 'email': 'flameyungoxx@gmail.com', 'password': 'showtime'},
     {'id': 2, 'email': 'snapelilith@gmail.com', 'password': 'nausicaa'},
     {'id': 3, 'email': 'maxime@gmail.com', 'password': 'kayakata'},
     {'id': 4, 'email': 'travis@gmail.com', 'password': 'jackboys'},

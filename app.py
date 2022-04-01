@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, redirect
 from flask_restful import Resource, Api, fields, reqparse, marshal_with
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -205,6 +205,10 @@ api.add_resource(Register, '/register')
 api.add_resource(Auth, '/login')
 api.add_resource(User, '/user/<int:user_id>')
 api.add_resource(Vaccine, '/vaccine/<int:vaccine_id>')
+
+@app.route('/')
+def home():
+    return redirect('https://github.com/gigaamiridze/First-API')
 
 @app.before_first_request
 def create_table():
